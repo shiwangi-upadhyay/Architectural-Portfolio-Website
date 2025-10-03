@@ -4,22 +4,22 @@ const projects = [
   {
     title: "As Built",
     subtitle: "As-Built for MEP",
-    img: "/projects/as-built.png",
+    img: "/assets/img1.jpeg",
   },
   {
     title: "Floor Plan",
     subtitle: "",
-    img: "/projects/floor-plan.png",
+    img: "/assets/img2.jpg",
   },
   {
     title: "Architectural Drawings",
     subtitle: "",
-    img: "/projects/architectural-drawings.png",
+    img: "/assets/img3.jpg",
   },
   {
     title: "Construction Documentation",
     subtitle: "",
-    img: "/projects/construction-documentation.png",
+    img: "/assets/img4.jpeg",
   },
 ];
 
@@ -29,7 +29,7 @@ export default function ProjectCards() {
       {projects.map((project) => (
         <div key={project.title} className="relative w-54 h-44 overflow-hidden shadow-lg">
           <Image src={project.img} alt={project.title} layout="fill" objectFit="cover" />
-          <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4">
+          <div className="absolute inset-0 flex flex-col justify-end p-4">
             <div className="text-white font-bold text-2xl">{project.title}</div>
             {project.subtitle && (
               <div className="text-white font-medium text-lg">{project.subtitle}</div>

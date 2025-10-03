@@ -28,11 +28,7 @@ const Navbar = () => {
     <nav
       className={`
         sticky top-0 z-50 flex items-center justify-around px-8 py-2 transition-all duration-200
-        ${
-          scrolled
-            ? "backdrop-blur-md shadow-md"
-            : "bg-white bg-opacity-100"
-        }
+        ${scrolled ? "backdrop-blur-md shadow-md" : "bg-white bg-opacity-100"}
       `}
     >
       {/* LOGO */}

@@ -5,21 +5,36 @@ export default function ContactSection() {
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row gap-8">
         <div className="flex-1 flex justify-center items-center">
-          <div className="w-full h-80 relative">
+          <div className="w-[80%] h-full relative">
             <Image
-              src="/contact/building.jpg" // Replace with your image path
+              src="/assets/building.jpg" 
               alt="Contact Building"
               layout="fill"
-              objectFit="cover"
-              className="rounded-lg"
+              className="object-fill rounded"
             />
           </div>
         </div>
         <form className="flex-1 grid grid-cols-2 gap-4">
-          <input type="text" placeholder="Name *" className="col-span-1 p-3 bg-gray-100 rounded" />
-          <input type="text" placeholder="Company" className="col-span-1 p-3 bg-gray-100 rounded" />
-          <input type="email" placeholder="Email *" className="col-span-1 p-3 bg-gray-100 rounded" />
-          <input type="text" placeholder="Phone *" className="col-span-1 p-3 bg-gray-100 rounded" />
+          <input
+            type="text"
+            placeholder="Name *"
+            className="col-span-1 p-3 bg-gray-100 rounded"
+          />
+          <input
+            type="text"
+            placeholder="Company"
+            className="col-span-1 p-3 bg-gray-100 rounded"
+          />
+          <input
+            type="email"
+            placeholder="Email *"
+            className="col-span-1 p-3 bg-gray-100 rounded"
+          />
+          <input
+            type="text"
+            placeholder="Phone *"
+            className="col-span-1 p-3 bg-gray-100 rounded"
+          />
           <select className="col-span-1 p-3 bg-gray-100 rounded">
             <option>Select a Service</option>
             <option>Architectural Engineering</option>
@@ -34,13 +49,25 @@ export default function ContactSection() {
             <option>Where do you need services?</option>
             {/* add more */}
           </select>
-          <input type="text" placeholder="What is your Project Budget?" className="col-span-1 p-3 bg-gray-100 rounded" />
-          <textarea placeholder="Message" className="col-span-2 p-3 bg-gray-100 rounded h-24" />
+          <input
+            type="text"
+            placeholder="What is your Project Budget?"
+            className="col-span-1 p-3 bg-gray-100 rounded"
+          />
+          <textarea
+            placeholder="Message"
+            className="col-span-2 p-3 bg-gray-100 rounded h-24"
+          />
           {/* Add captcha here */}
           <div className="col-span-2 flex items-center gap-4 mt-2">
             <input type="checkbox" id="human" />
             <label htmlFor="human">I am human</label>
-            <Image src="/contact/hcaptcha.png" alt="hCaptcha" width={100} height={40} />
+            <Image
+              src="/contact/hcaptcha.png"
+              alt="hCaptcha"
+              width={100}
+              height={40}
+            />
           </div>
           <button className="col-span-2 mt-2 bg-gradient-to-r from-orange-500 to-blue-500 text-white font-bold py-3 rounded hover:opacity-90 transition">
             SEND MESSAGE
