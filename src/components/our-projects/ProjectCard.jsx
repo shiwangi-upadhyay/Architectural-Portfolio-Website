@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
 import { useState } from "react";
+import { Link2, ZoomIn, ChevronRight } from "lucide-react";
 
 export default function ProjectCard({ project }) {
   const router = useRouter();
@@ -10,46 +11,72 @@ export default function ProjectCard({ project }) {
 
   return (
     <div
-      className={`bg-white rounded shadow hover:shadow-xl relative overflow-hidden cursor-pointer transition-all duration-200
-        ${hovered ? "ring-2 ring-orange-400" : ""}
+      className={`bg-white rounded-lg overflow-hidden cursor-pointer transition-all duration-500 transform
+        ${hovered ? "shadow-2xl" : "shadow-md hover:shadow-lg"}
       `}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       onClick={() => router.push(project.link)}
     >
-      <div className="relative w-full h-56">
+      <div className="relative w-full h-48 sm:h-56 lg:h-64 overflow-hidden group">
         <Image
           src={project.image}
           alt={project.title}
-          layout="fill"
-          objectFit="cover"
-          className={`transition duration-200 ${hovered ? "opacity-60" : "opacity-100"}`}
-        />
-        {hovered && (
-          <div className="absolute inset-0 flex items-center justify-center gap-4 z-10">
-            {/* Overlay icons: chain link, magnifier */}
-            <span className="bg-blue-900 rounded-full p-3 shadow hover:bg-blue-800 transition text-white">
-              <svg width={24} height={24} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                <path d="M10 14l2-2m0 0l4-4m-4 4L6 6m6 6l4 4"></path>
-              </svg>
-            </span>
-            <span className="bg-blue-900 rounded-full p-3 shadow hover:bg-blue-800 transition text-white">
-              <svg width={24} height={24} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                <circle cx="11" cy="11" r="8"></circle>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-              </svg>
-            </span>
-          </div>
-        )}
-      </div>
-      <div className="p-4 text-center">
-        <span
-          className={`block text-base font-semibold leading-tight transition ${
-            hovered ? "text-orange-600 underline" : "text-blue-900"
+          fill
+          className={`object-cover transition-all duration-700 ${
+            hovered ? "scale-110 brightness-75" : "scale-100"
           }`}
-        >
+        />
+        
+        {/* Gradient overlay */}
+        <div className={`absolute inset-0 bg-gradient-to-t from-blue-900/80 via-blue-900/40 to-transparent transition-opacity duration-500 ${
+          hovered ? "opacity-100" : "opacity-0"
+        }`}></div>
+        
+        {/* Icons overlay */}
+        <div className={`absolute inset-0 flex items-center justify-center gap-3 sm:gap-4 transition-all duration-500 ${
+          hovered ? "opacity-100 scale-100" : "opacity-0 scale-75"
+        }`}>
+          <button 
+            className="bg-white hover:bg-orange-500 text-blue-900 hover:text-white rounded-full p-3 sm:p-4 shadow-lg transition-all duration-300 transform hover:scale-110 hover:rotate-12"
+            onClick={(e) => {
+              e.stopPropagation();
+              // Add link functionality
+            }}
+          >
+            <Link2 size={18} strokeWidth={2.5} className="sm:w-5 sm:h-5" />
+          </button>
+          <button 
+            className="bg-white hover:bg-orange-500 text-blue-900 hover:text-white rounded-full p-3 sm:p-4 shadow-lg transition-all duration-300 transform hover:scale-110 hover:-rotate-12"
+            onClick={(e) => {
+              e.stopPropagation();
+              // Add zoom functionality
+            }}
+          >
+            <ZoomIn size={18} strokeWidth={2.5} className="sm:w-5 sm:h-5" />
+          </button>
+        </div>
+
+        {/* Sector badge */}
+        <div className={`absolute top-3 left-3 sm:top-4 sm:left-4 bg-orange-500 text-white px-2 py-1 sm:px-3 sm:py-1 rounded-full text-xs font-semibold shadow-lg transition-all duration-500 ${
+          hovered ? "translate-y-0 opacity-100" : "-translate-y-4 opacity-0"
+        }`}>
+          {project.sector}
+        </div>
+      </div>
+      
+      <div className="p-4 sm:p-5">
+        <h3 className={`text-base sm:text-lg font-semibold leading-tight transition-all duration-300 ${
+          hovered ? "text-orange-500" : "text-blue-900"
+        }`}>
           {project.title}
-        </span>
+        </h3>
+        <div className={`mt-2 sm:mt-3 flex items-center text-xs sm:text-sm font-medium transition-all duration-300 ${
+          hovered ? "text-orange-500 translate-x-2" : "text-gray-500"
+        }`}>
+          <span>View Details</span>
+          <ChevronRight size={14} className="ml-1 sm:w-4 sm:h-4" />
+        </div>
       </div>
     </div>
   );

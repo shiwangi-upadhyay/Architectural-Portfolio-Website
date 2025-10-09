@@ -12,7 +12,7 @@ export default function ServiceCards() {
   return (
     <div className="max-w-6xl mx-auto px-4 border-b-[3px] border-b-gray-200 pb-6">
       <h2 className="text-[22px] font-bold text-center mt-8 mb-2 tracking-wide">
-        TEJJY SERVICES FOR ARCHITECTURE, ENGINEERING AND CONSTRUCTION PROJECTS
+        SRII SERVICES FOR ARCHITECTURE, ENGINEERING AND CONSTRUCTION PROJECTS
       </h2>
       <div className="flex justify-center mb-16">
         <div className="w-10 h-[2px] bg-gradient-to-r from-orange-500 to-blue-500" />
@@ -21,7 +21,7 @@ export default function ServiceCards() {
         {services.map((service) => (
           <div
             key={service.title}
-            className="group bg-gradient-to-r from-orange-400 to-blue-900 rounded-lg shadow-lg w-46 h-30 flex flex-col items-center justify-between py-3 text-white hover:scale-105 transition"
+            className="group bg-gradient-to-r from-orange-400  to-blue-900 rounded-lg shadow-lg w-46 h-30 flex flex-col items-center justify-between py-3 text-white hover:scale-105 transition"
           >
             <div className="w-20 h-10 flex justify-center">
               <Image
@@ -45,7 +45,7 @@ export default function ServiceCards() {
       {/* Portfolio Button */}
       <div className="flex justify-center mb-10 max-w-6xl mx-auto ">
         <button className="bg-blue-900 text-white font-bold py-2 px-8 rounded-sm shadow hover:bg-green-700 transition text-xl w-full tracking-wide">
-          LOOK INTO OUR PORTFOLIO FOR TEJJY WORK JOURNEY !
+          LOOK INTO OUR PORTFOLIO FOR SRII WORK JOURNEY !
         </button>
       </div>
     </div>

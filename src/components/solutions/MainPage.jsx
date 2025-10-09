@@ -9,7 +9,7 @@ export default function Services() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <div className="border-b">
+      {/* <div className="border-b">
         <div className=" h-30 w-full flex items-center justify-center">
           <h1 className="text-4xl text-center tracking-wide text-orange-400">
             OUR SERVICES
@@ -19,21 +19,32 @@ export default function Services() {
           <span className="font-semibold">Tejjy Inc.</span> &gt;{" "}
           <span>Our Services</span>
         </div>
+      </div> */}
+
+      <div className="bg-gray-100 py-8 border-b">
+        <h1 className="text-4xl text-center tracking-wide text-orange-400">
+          OUR SERVICES
+        </h1>
+        <div className="mt-3 flex items-center gap-2 px-8 text-gray-600 text-sm">
+          <span>Home</span>
+          <span className="text-gray-400">&bull;</span>
+          <span>Our Services</span>
+        </div>
       </div>
 
       {/* Main Description */}
       <div className="max-w-6xl mx-auto py-10 px-4">
         <p className="text-sm text-gray-700 leading-relaxed">
-          Tejjy Inc. is a leading women-owned facility and property management
+          Srii Constructions. is a leading women-owned facility and property management
           company in USA. We specialize in AEC services for Building designs
           including Architecture, Engineering, and Construction (AEC) industry.
           The vision of digital tranformation aligns us to facilitate optimized
           design accuracy, streamlined workflows across all phases of
-          construction and engineering life cycle. Tejjy team is highly skilled
+          construction and engineering life cycle. Srii team is highly skilled
           with Architectural Engineering, Building Information Modeling, 3D
           laser Scanning software and equipments to successfully deliver client
           focused customized suite of services. With a focus on sustainable
-          practices and smart building solutions, Tejjy Inc. is dedicated to
+          practices and smart building solutions, Srii Constructions. is dedicated to
           transforming the AEC landscape through technology-driven approaches.
           We are here to enhance your planning, designing, engineering, facility
           management journey of residential, commercial, federal projects with
@@ -56,7 +67,7 @@ export default function Services() {
           <div className="w-10 h-[2px] bg-gradient-to-r from-orange-500 to-blue-500" />
         </div>
         <p className="text-sm text-gray-700 leading-relaxed mb-8">
-          Tejjy Inc comprehensive set of tools, technologies and processes
+          Srii Constructions. comprehensive set of tools, technologies and processes
           integrate architectural designing with engineering principle. A
           strategic workflow, quality checks are adopted to optimize planning,
           design, construction, and management of buildings and infrastructure.
@@ -67,7 +78,7 @@ export default function Services() {
           building designs. Our team of architects have been successfully
           delivering construction, renovation and facility management solution
           for residential, mixed-use, government, federal, infrastructural,
-          industrial projects. Tejjy embraces latest 3D scanning technology for
+          industrial projects. Srii embraces latest 3D scanning technology for
           capturing precise existing condition to renovate or remodel with
           addition in rooms or executing space management.
         </p>
@@ -78,13 +89,13 @@ export default function Services() {
       <div className="bg-white py-10 ">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-2 tracking-wide">
-            TEJJY VDC/BIM SOLUTIONS FOR DIGITIZING AEC SERVICES
+            SRII VDC/BIM SOLUTIONS FOR DIGITIZING AEC SERVICES
           </h2>
           <div className="flex justify-center mb-16">
             <div className="w-10 h-[2px] bg-gradient-to-r from-orange-500 to-blue-500" />
           </div>
           <p className="text-sm text-gray-700 leading-relaxed mb-8">
-            At Tejjy Inc., we are committed to transforming your architectural
+            At Srii Constructions., we are committed to transforming your architectural
             vision into reality through our innovative VDC BIM services. 3D
             modeling integrates with virtual design and construction for
             scheduling, cost estimation, and project management, enabling
@@ -92,7 +103,7 @@ export default function Services() {
             a building project. By leveraging VDC, architectural engineers can
             visualize design elements in real-time, ensuring seamless
             coordination between structural, architectural, and{" "}
-            <b>MEP (Mechanical, Electrical, Plumbing)</b> systems. Tejjy Inc
+            <b>MEP (Mechanical, Electrical, Plumbing)</b> systems. Srii Constructions.
             assures VDC gatekeeping, BIM modeling and detailing solutions for
             architectural, structural engineering, MEPF, and façade trades. Our
             BIM engineers/architects provide fabrication shop drawings for the
@@ -119,10 +130,8 @@ export default function Services() {
       <ContactSection />
 
       {/* Footer */}
-      
-<Footer />
-      
-      
+
+      <Footer />
     </div>
   );
 }
