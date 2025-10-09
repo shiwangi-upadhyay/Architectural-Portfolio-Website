@@ -7,8 +7,8 @@ import { FaAngleRight } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="text-white pt-8 mt-16 mx-auto">
-      <div className="max-w-5xl mx-auto px-4 grid md:grid-cols-4 gap-8 mb-16">
+    <footer className="text-white pt-8 mt-16 mx-auto bg-[#002651]">
+      <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-8 mb-16">
         {/* About Company */}
         <div>
           <h4 className="mb-6 tracking-wide">About Company</h4>

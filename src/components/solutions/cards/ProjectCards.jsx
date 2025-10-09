@@ -25,7 +25,7 @@ const projects = [
 
 export default function ProjectCards() {
   return (
-    <div className="grid grid-cols-4 gap-4 justify-center">
+    <div className="grid grid-cols-4 gap-4 justify-center max-w-6xl w-full mx-auto">
       {projects.map((project) => (
         <div key={project.title} className="relative w-54 h-44 overflow-hidden shadow-lg">
           <Image src={project.img} alt={project.title} layout="fill" objectFit="cover" />

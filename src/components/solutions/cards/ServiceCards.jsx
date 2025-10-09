@@ -10,7 +10,7 @@ const services = [
 
 export default function ServiceCards() {
   return (
-    <div className="max-w-5xl mx-auto px-4 border-b-[3px] border-b-gray-200 pb-6">
+    <div className="max-w-6xl mx-auto px-4 border-b-[3px] border-b-gray-200 pb-6">
       <h2 className="text-[22px] font-bold text-center mt-8 mb-2 tracking-wide">
         TEJJY SERVICES FOR ARCHITECTURE, ENGINEERING AND CONSTRUCTION PROJECTS
       </h2>
@@ -43,7 +43,7 @@ export default function ServiceCards() {
         ))}
       </div>
       {/* Portfolio Button */}
-      <div className="flex justify-center mb-10 max-w-5xl mx-auto ">
+      <div className="flex justify-center mb-10 max-w-6xl mx-auto ">
         <button className="bg-blue-900 text-white font-bold py-2 px-8 rounded-sm shadow hover:bg-green-700 transition text-xl w-full tracking-wide">
           LOOK INTO OUR PORTFOLIO FOR TEJJY WORK JOURNEY !
         </button>

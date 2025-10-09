@@ -61,7 +61,7 @@ const sectors = [
 export default function SectorsWeServe() {
   return (
     <section className="py-16 bg-gray-100">
-      <div className="max-w-5xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-2xl font-bold text-gray-800 mb-2 tracking-wide">
           SECTORS WE SERVE:
         </h2>

@@ -2,8 +2,8 @@ import ServiceCards from "../solutions/cards/ServiceCards";
 import ProjectCards from "../solutions/cards/ProjectCards";
 import BIMCards from "../solutions/cards//BIMCards";
 import SectorsWeServe from "../solutions/cards/SectorsWeServe";
-import ContactSection from "../solutions/ContactSection";
-import Footer from "../solutions/Footer";
+import ContactSection from "../common/ContactSection";
+import Footer from "../common/Footer";
 
 export default function Services() {
   return (
@@ -22,7 +22,7 @@ export default function Services() {
       </div>
 
       {/* Main Description */}
-      <div className="max-w-5xl mx-auto py-10 px-4">
+      <div className="max-w-6xl mx-auto py-10 px-4">
         <p className="text-sm text-gray-700 leading-relaxed">
           Tejjy Inc. is a leading women-owned facility and property management
           company in USA. We specialize in AEC services for Building designs
@@ -47,7 +47,7 @@ export default function Services() {
       <ServiceCards />
 
       {/* Architectural Engineering Section */}
-      <div className="max-w-5xl mx-auto px-4 mt-12 mb-14">
+      <div className="max-w-6xl mx-auto px-4 mt-12 mb-14">
         <h2 className="text-2xl font-bold text-center mb-2 tracking-wide">
           ARCHITECTURAL ENGINEERING SOLUTION FOR RESIDENTIAL, COMMERCIAL AND
           FEDERAL PROJECTS
@@ -76,7 +76,7 @@ export default function Services() {
 
       {/* BIM/VDC Solutions Section */}
       <div className="bg-white py-10 ">
-        <div className="max-w-5xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-2 tracking-wide">
             TEJJY VDC/BIM SOLUTIONS FOR DIGITIZING AEC SERVICES
           </h2>
@@ -119,9 +119,9 @@ export default function Services() {
       <ContactSection />
 
       {/* Footer */}
-      <div className="bg-[#002651] mt-12">
+      
 <Footer />
-      </div>
+      
       
     </div>
   );
