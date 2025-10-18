@@ -16,7 +16,7 @@ const Navbar = () => {
 
   const navLinks = [
     { href: "/", label: "Home" },
-  
+
     { href: "/solutions", label: "Our Services" },
     { href: "/our-projects", label: "Projects" },
     // { href: "/ourServices", label: "Our Services" },
@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <nav
       className={`
-        sticky top-0 z-50 flex items-center justify-around px-8 py-2 transition-all duration-200
+        sticky top-0 z-50 flex items-center justify-around px-8 py-1 transition-all duration-200
         ${scrolled ? "backdrop-blur-md shadow-md" : "bg-white bg-opacity-100"}
       `}
     >
@@ -54,15 +54,15 @@ const Navbar = () => {
               key={link.href}
               href={link.href}
               className={`
-    px-4 py-2 rounded-lg font-semibold  
-    ${
-      isActive
-        ? // Active: more opaque, border visible, background blurred
-          "border-orange-400 text-orange-400 bg-[#ffe1cc] backdrop-blur-md"
-        : // Inactive: subtle border, transparent, background blurred, on hover more solid
-          "border-white/20 text-black bg-white/20 backdrop-blur-md hover:border-orange-400 hover:text-orange-400"
-    }
-  `}
+                px-4 py-2 rounded-lg font-semibold  
+                ${
+                  isActive
+                    ? // Active: more opaque, border visible, background blurred
+                      "border-orange-400 text-orange-400 bg-[#ffe1cc] backdrop-blur-md"
+                    : // Inactive: subtle border, transparent, background blurred, on hover more solid
+                      "border-white/20 text-black bg-white/20 backdrop-blur-md hover:border-orange-400 hover:text-orange-400"
+                }
+              `}
             >
               {link.label}
             </Link>

@@ -35,9 +35,11 @@ export default function BIMProjectsPage() {
 
           <div className="mt-6 flex items-center justify-center gap-2 text-xs sm:text-sm text-gray-400">
             <Home size={14} className="text-orange-400" />
-            <span className="hover:text-orange-400 transition-colors cursor-pointer">
-              Home
-            </span>
+            <Link href="/">
+              <span className="hover:text-orange-400 transition-colors cursor-pointer">
+                Home
+              </span>
+            </Link>
             <ChevronRight size={12} />
             <span className="text-orange-400">Our SRII Projects</span>
           </div>

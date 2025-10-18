@@ -4,6 +4,8 @@ import BIMCards from "../solutions/cards//BIMCards";
 import SectorsWeServe from "../solutions/cards/SectorsWeServe";
 import ContactSection from "../common/ContactSection";
 import Footer from "../common/Footer";
+import { ChevronRight, Home } from "lucide-react";
+import Link from "next/link";
 
 export default function Services() {
   return (
@@ -21,7 +23,7 @@ export default function Services() {
         </div>
       </div> */}
 
-      <div className="bg-gray-100 py-8 border-b">
+      {/* <div className="bg-gray-100 py-8 border-b">
         <h1 className="text-4xl text-center tracking-wide text-orange-400">
           OUR SERVICES
         </h1>
@@ -30,7 +32,28 @@ export default function Services() {
           <span className="text-gray-400">&bull;</span>
           <span>Our Services</span>
         </div>
-      </div>
+      </div> */}
+
+      <section className="bg-[#002651] text-white py-16 sm:py-20 text-center">
+        <div className="max-w-4xl mx-auto px-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3">
+            Our <span className="text-orange-400">services</span> 
+          </h1>
+
+          
+
+          <div className="mt-6 flex items-center justify-center gap-2 text-xs sm:text-sm text-gray-400">
+            <Home size={14} className="text-orange-400" />
+            <Link href="/">
+              <span className="hover:text-orange-400 transition-colors cursor-pointer">
+                Home
+              </span>
+            </Link>
+            <ChevronRight size={12} />
+            <span className="text-orange-400">Our Services</span>
+          </div>
+        </div>
+      </section>
 
       {/* Main Description */}
       <div className="max-w-6xl mx-auto py-10 px-4">

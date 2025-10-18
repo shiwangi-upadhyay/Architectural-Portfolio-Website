@@ -3,6 +3,7 @@ import React from "react";
 import Divisions from "./divisions/Divisions";
 import Solutions from "./solutions/Solutions";
 import ClientsSection from "./Clients";
+import Footer from "./common/Footer";
 
 const Homepage = () => {
   return (
@@ -27,6 +28,9 @@ const Homepage = () => {
       <section className="w-full py-12">
         <ClientsSection/>
       </section>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };

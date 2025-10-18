@@ -21,20 +21,6 @@ export default function ServiceCard() {
               className="object-cover"
               priority={index === 0}
             />
-            {/* Title Bar */}
-            <div
-              className="
-            absolute left-0 bottom-4
-            w-3/4 md:w-2/3
-            bg-lime-500 bg-opacity-95
-            px-8 py-3
-            shadow
-          "
-            >
-              <span className="text-white text-2xl font-semibold underline">
-                {img.title}
-              </span>
-            </div>
           </div>
         ))}
       </Card>

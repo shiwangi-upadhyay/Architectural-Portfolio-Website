@@ -29,7 +29,7 @@ export default function ServiceCard() {
               absolute left-0 bottom-0
               w-full
               bg-blue-950 bg-opacity-95
-              px-8 py-3
+              px-8 py-6
               shadow
               overflow-hidden
               group
@@ -48,10 +48,10 @@ export default function ServiceCard() {
               "
                 aria-hidden="true"
               />
-              {/* Text */}
+              {/* Text
               <span className="relative text-white text-2xl font-semibold z-10">
                 {img.title}
-              </span>
+              </span> */}
             </div>
           </div>
         ))}
