@@ -1,4 +1,4 @@
-import MainPage from '@/components/solutions/MainPage'
+import MainPage from '../../components/solutions/MainPage'
 import React from 'react'
 
 const page = () => {

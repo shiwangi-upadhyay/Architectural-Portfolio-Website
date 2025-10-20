@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useRouter } from 'next/navigation';
 import { useState } from "react";
 import { Link2, ZoomIn, ChevronRight } from "lucide-react";
+import Router from "next/router";
 
 export default function ProjectCard({ project }) {
   const router = useRouter();
@@ -73,7 +74,8 @@ export default function ProjectCard({ project }) {
         </h3>
         <div className={`mt-2 sm:mt-3 flex items-center text-xs sm:text-sm font-medium transition-all duration-300 ${
           hovered ? "text-orange-500 translate-x-2" : "text-gray-500"
-        }`}>
+        }`}
+        onClick={() => Router.push(`/our-projects/${project.id}`)}>
           <span>View Details</span>
           <ChevronRight size={14} className="ml-1 sm:w-4 sm:h-4" />
         </div>

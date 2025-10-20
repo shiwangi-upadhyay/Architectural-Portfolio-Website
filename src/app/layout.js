@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono, Open_Sans } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import Navbar from "../components/Navbar";
+import TopInfoBar from "../components/Topbar";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -29,9 +30,11 @@ export default function RootLayout({ children }) {
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         className={`${openSans.className} antialiased`}
       >
-        <Navbar />
+        <div className="sticky top-0 z-[99] w-full">
+          <TopInfoBar />
+          <Navbar />
+        </div>
         {children}
-        
       </body>
     </html>
   );

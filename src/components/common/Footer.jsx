@@ -30,7 +30,7 @@ export default function Footer() {
     { icon: FaPhone, text: "202-465-4830 (HQ)" },
     { icon: FaMapMarkerAlt, text: "66 W Flagler Street, Suite 900 Miami, FL 33130" },
     { icon: FaPhone, text: "(786) 789-2103 (FL)" },
-    { icon: FaEnvelope, text: "info@tejjy.com" },
+    { icon: FaEnvelope, text: "info@shri.com" },
   ];
 
   return (
