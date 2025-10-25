@@ -1,18 +1,20 @@
-import React from 'react'
-import ServiceCard from './ServiceCard'
+import Link from "next/link";
+import ServiceCard from "./ServiceCard";
 
-const Divisions = () => {
+export default function Divisions() {
   return (
-    <div className='w-full mx-auto'>
-      <header>
-       <h2 className="text-6xl font-light text-orange-400 text-center mb-4 tracking-wider">
-        DIVISIONS
-      </h2>
-      <div className="h-1 w-40 bg-orange-200 mx-auto mb-12" />
-      </header>
-      <ServiceCard/>
-    </div>
-  )
-}
+    <section className="w-full bg-white py-12">
+      {/* Reduced max width so cards appear smaller on large screens */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header className="mb-8 text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-orange-400 tracking-wider">
+            DIVISIONS
+          </h2>
+          <div className="h-1 w-24 bg-orange-200 mx-auto mt-4" />
+        </header>
 
-export default Divisions
+        <ServiceCard />
+      </div>
+    </section>
+  );
+}

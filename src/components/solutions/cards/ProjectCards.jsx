@@ -25,14 +25,26 @@ const projects = [
 
 export default function ProjectCards() {
   return (
-    <div className="grid grid-cols-4 gap-4 justify-center max-w-6xl w-full mx-auto">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 justify-center max-w-6xl w-full mx-auto px-4">
       {projects.map((project) => (
-        <div key={project.title} className="relative w-54 h-44 overflow-hidden shadow-lg">
-          <Image src={project.img} alt={project.title} layout="fill" objectFit="cover" />
-          <div className="absolute inset-0 flex flex-col justify-end p-4">
-            <div className="text-white font-bold text-2xl">{project.title}</div>
+        <div
+          key={project.title}
+          className="relative w-full h-44 sm:h-48 md:h-52 overflow-hidden shadow-lg rounded-lg group cursor-pointer"
+        >
+          <Image
+            src={project.img}
+            alt={project.title}
+            fill
+            className="object-cover transition-transform duration-300 group-hover:scale-110"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-4">
+            <div className="text-white font-bold text-lg sm:text-xl md:text-2xl">
+              {project.title}
+            </div>
             {project.subtitle && (
-              <div className="text-white font-medium text-lg">{project.subtitle}</div>
+              <div className="text-white font-medium text-sm sm:text-base md:text-lg mt-1">
+                {project.subtitle}
+              </div>
             )}
           </div>
         </div>

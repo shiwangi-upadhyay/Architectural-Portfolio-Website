@@ -1,40 +1,46 @@
-import { CarouselPlugin } from "./Carousel";
 import React from "react";
-import Divisions from "./divisions/Divisions";
-import Solutions from "./solutions/Solutions";
-import ClientsSection from "./Clients";
-import Footer from "./common/Footer";
+import { CarouselPlugin } from "../components/Carousel";
+import Divisions from "../components/divisions/Divisions";
+import Solutions from "../components/solutions/Solutions";
+import ClientsSection from "../components/Clients";
+import Footer from "../components/common/Footer";
 
 const Homepage = () => {
   return (
-    <div className="flex w-full flex-col items-center">
-     {/* Hero Section with Carousel */}
+    <main className="w-full flex flex-col items-center">
+      {/* Hero Section with Carousel */}
       <section className="w-full">
         <CarouselPlugin />
         <div className="max-w-5xl mx-auto p-6 space-y-8">
-          {/* Additional content can go here */}
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, adipisci quibusdam ad suscipit quisquam eius ducimus rerum fugit aut. Molestias eos omnis asperiores odit itaque possimus, labore suscipit tenetur dolorem minus exercitationem sit ea explicabo illum error voluptates maxime vnem accusantium excepturi ipsa necessitatibus sed? Libero ipsam quis voluptatem recusandae placeat itaque quo quaerat ad nisi at reiciendis alias dolore, nemo sit adipisci impedit, aliquam deserunt possimus. Fugiat pariatur ullam asperiores officia quibusdam numquam neque itaque dolorum officiis, est nisi. Dignissimos dolore officia explicabo alias expedita quo repu. Cum accusamus assumenda eaque aliquid in veniam dolor inventore aperiam culpa deserunt commodi quasi beatae quo corrupti ipsa ad harum, minus facilis optio modi rerum repudiandae odit velit a. Hic dicta reprehenderit neque exercitationem.</p>
+          <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, adipisci quibusdam ad suscipit quisquam eius ducimus rerum fugit aut...
+          </p>
         </div>
       </section>
+
       {/* Divisions Section */}
-      <section className="w-full py-12">
+      <section className="w-full py-12 bg-white">
         <Divisions />
       </section>
+
       {/* Solutions Section */}
-      <section className="w-full py-12">
-        <Solutions/>
+      <section className="w-full py-12 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Solutions />
+        </div>
       </section>
+
       {/* Client Section */}
-      <section className="w-full py-12">
-        <ClientsSection/>
+      <section className="w-full py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ClientsSection />
+        </div>
       </section>
 
       {/* Footer */}
       <Footer />
-    </div>
+    </main>
   );
 };
 
 export default Homepage;
-
-  
