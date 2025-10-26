@@ -10,12 +10,22 @@ import { Card, CardContent } from "../ui/card";
 import Autoplay from "embla-carousel-autoplay";
 import * as React from "react";
 import Footer from "../common/Footer";
+import SlidingOverlay from "../common/SlidingOverlay";
 
 export default function ProjectDetails({ project }) {
-  if (!project) return <div className="text-center py-24 text-xl text-red-500">Project not found.</div>;
+  if (!project)
+    return (
+      <div className="text-center py-24 text-xl text-red-500">
+        Project not found.
+      </div>
+    );
 
   // Fallback: If images is missing, fallback to the single image field or empty array
-  const images = project.images?.length ? project.images : (project.image ? [project.image] : []);
+  const images = project.images?.length
+    ? project.images
+    : project.image
+    ? [project.image]
+    : [];
 
   const plugin = React.useRef(
     Autoplay({ delay: 3000, stopOnInteraction: false })
@@ -24,7 +34,9 @@ export default function ProjectDetails({ project }) {
   return (
     <div className="bg-gray-50 min-h-screen">
       <div className="bg-gray-100 py-8 mb-2 border-b">
-        <h1 className="text-3xl text-center font-semibold text-gray-800">{project.title}</h1>
+        <h1 className="text-3xl text-center font-semibold text-gray-800">
+          {project.title}
+        </h1>
       </div>
       <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col lg:flex-row gap-8">
         {/* Carousel Section */}
@@ -62,16 +74,20 @@ export default function ProjectDetails({ project }) {
         </div>
         {/* Details */}
         <div className="flex-1 bg-white rounded-lg shadow-lg px-8 py-10 flex flex-col justify-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">{project.summary}</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            {project.summary}
+          </h2>
           <p className="text-gray-700 mb-6">{project.description}</p>
-          <div className="border-t border-pink-500 my-4"></div>
+          <div className="border-t border-orange-400 my-4"></div>
           <div className="space-y-4">
             <div>
               <span className="font-semibold text-gray-700">Sector</span>
               <div className="text-gray-900">{project.sector}</div>
             </div>
             <div>
-              <span className="font-semibold text-gray-700">Service Offered</span>
+              <span className="font-semibold text-gray-700">
+                Service Offered
+              </span>
               <div className="text-gray-900">{project.services}</div>
             </div>
             <div>
@@ -79,9 +95,21 @@ export default function ProjectDetails({ project }) {
               <div className="text-gray-900">{project.software}</div>
             </div>
           </div>
-          <button className="mt-8 px-6 py-3 bg-black text-white font-semibold rounded hover:bg-pink-600 transition">
-            BIM SERVICES
-          </button>
+
+          <div className="flex justify-center mt-6 sm:mt-8 text-white">
+            <SlidingOverlay
+              as="button"
+              type="button"
+              baseBgClass="bg-blue-900"
+              overlayClassName="bg-orange-400"
+              overlayFrom="left"
+              overlayOpacity="opacity-90"
+              duration="600"
+              className="w-full max-w-4xl px-4 py-3 sm:px-4 sm:py-2 rounded-sm shadow font-bold text-base sm:text-lg md:text-xl tracking-wide"
+            >
+              SRII SERVICES
+            </SlidingOverlay>
+          </div>
         </div>
       </div>
       <Footer />

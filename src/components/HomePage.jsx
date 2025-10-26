@@ -19,19 +19,21 @@ const Homepage = () => {
       </section>
 
       {/* Divisions Section */}
-      <section className="w-full py-12 bg-white">
+      <section className="w-full  bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Divisions />
+        </div>
       </section>
 
       {/* Solutions Section */}
-      <section className="w-full py-12 bg-gray-50">
+      <section className="w-full  bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Solutions />
         </div>
       </section>
 
       {/* Client Section */}
-      <section className="w-full py-12 bg-white">
+      <section className="w-full  bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ClientsSection />
         </div>

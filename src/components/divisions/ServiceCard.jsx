@@ -23,9 +23,9 @@ const items = [
 
 export default function ServiceCard() {
   return (
-    <div className="pt-4">
+    <div className="pt-4 ">
       {/* Increased columns at md/lg to make individual cards smaller */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-18">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-18">
         {items.map((item, idx) => (
           <Link
             key={`${item.src}-${idx}`}

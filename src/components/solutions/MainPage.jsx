@@ -1,11 +1,12 @@
 import ServiceCards from "../solutions/cards/ServiceCards";
 import ProjectCards from "../solutions/cards/ProjectCards";
-import BIMCards from "../solutions/cards//BIMCards";
+import SRIICards from "./cards/SRIICards";
 import SectorsWeServe from "../solutions/cards/SectorsWeServe";
 import ContactSection from "../common/ContactSection";
 import Footer from "../common/Footer";
 import { ChevronRight, Home } from "lucide-react";
 import Link from "next/link";
+import SlidingOverlay from "../common/SlidingOverlay";
 
 export default function Services() {
   return (
@@ -33,9 +34,10 @@ export default function Services() {
       {/* Main Description - Responsive */}
       <div className="max-w-6xl mx-auto py-8 sm:py-10 md:py-12 px-4 sm:px-6">
         <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-          Srii Constructions. is a leading women-owned facility and property management
-          company in USA. We specialize in AEC services for Building designs
-          including Architecture, Engineering, and Construction (AEC) industry.
+          Srii Constructions. is a leading women-owned facility and property
+          management company in USA. We specialize in AEC services for Building
+          designs including Architecture, Engineering, and Construction (AEC)
+          industry.
           {/* ... rest of content ... */}
         </p>
       </div>
@@ -53,8 +55,9 @@ export default function Services() {
           <div className="w-10 h-[2px] bg-gradient-to-r from-orange-500 to-blue-500" />
         </div>
         <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-6 sm:mb-8">
-          Srii Constructions. comprehensive set of tools, technologies and processes
-          integrate architectural designing with engineering principle.
+          Srii Constructions. comprehensive set of tools, technologies and
+          processes integrate architectural designing with engineering
+          principle.
           {/* ... rest of content ... */}
         </p>
         <ProjectCards />
@@ -70,19 +73,28 @@ export default function Services() {
             <div className="w-10 h-[2px] bg-gradient-to-r from-orange-500 to-blue-500" />
           </div>
           <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-6 sm:mb-8">
-            At Srii Constructions., we are committed to transforming your architectural
-            vision into reality through our innovative VDC BIM services.
+            At Srii Constructions., we are committed to transforming your
+            architectural vision into reality through our innovative VDC BIM
+            services.
             {/* ... rest of content ... */}
           </p>
-          <BIMCards />
-          <div className="flex justify-center mt-6 sm:mt-8">
-            <button className="bg-blue-900 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-sm shadow hover:bg-green-700 transition text-base sm:text-lg md:text-xl w-full max-w-4xl tracking-wide">
+          <SRIICards />
+          <div className="flex justify-center mt-6 sm:mt-8 text-white">
+            <SlidingOverlay
+              as="button"
+              type="button"
+              baseBgClass="bg-blue-900"
+              overlayClassName="bg-orange-400"
+              overlayFrom="left"
+              overlayOpacity="opacity-90"
+              duration="600"
+              className="w-full max-w-4xl px-6 py-3 sm:px-8 sm:py-4 rounded-sm shadow font-bold text-base sm:text-lg md:text-xl tracking-wide"
+            >
               LOOKING TO OUTSOURCE AEC SERVICES......CALL TO DISCUSS !
-            </button>
+            </SlidingOverlay>
           </div>
         </div>
       </div>
-
 
       {/* Sectors We Serve Section with Orange-Blue Gradient */}
       <SectorsWeServe />

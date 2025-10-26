@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import SlidingOverlay from "../../common/SlidingOverlay";
 
 const services = [
   { title: "Architectural Engineering", icon: "/icons/office-building.png" },
@@ -14,9 +17,11 @@ export default function ServiceCards() {
       <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-center mt-6 sm:mt-8 mb-2 sm:mb-3 tracking-wide px-2">
         SRII SERVICES FOR ARCHITECTURE, ENGINEERING AND CONSTRUCTION PROJECTS
       </h2>
+
       <div className="flex justify-center mb-8 sm:mb-12 md:mb-16">
         <div className="w-10 h-[2px] bg-gradient-to-r from-orange-500 to-blue-500" />
       </div>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 justify-center gap-4 sm:gap-6 mb-6 sm:mb-8">
         {services.map((service) => (
           <div
@@ -42,11 +47,21 @@ export default function ServiceCards() {
           </div>
         ))}
       </div>
-      {/* Portfolio Button */}
-      <div className="flex justify-center mb-6 sm:mb-8 md:mb-10">
-        <button className="bg-blue-900 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-sm shadow hover:bg-green-700 transition-colors text-base sm:text-lg md:text-xl w-full max-w-4xl tracking-wide">
+
+      {/* Sliding overlay button using the new component */}
+      <div className="flex justify-center mb-6 sm:mb-8 md:mb-10 text-white">
+        <SlidingOverlay
+          as="button"
+          type="button"
+          baseBgClass="bg-blue-900"
+          overlayClassName="bg-orange-400"
+          overlayFrom="left"
+          overlayOpacity="opacity-90"
+          duration="600"
+          className="w-full max-w-4xl px-6 py-3 sm:px-8 sm:py-4 rounded-sm shadow font-bold text-base sm:text-lg md:text-xl tracking-wide"
+        >
           LOOK INTO OUR PORTFOLIO FOR SRII WORK JOURNEY !
-        </button>
+        </SlidingOverlay>
       </div>
     </div>
   );

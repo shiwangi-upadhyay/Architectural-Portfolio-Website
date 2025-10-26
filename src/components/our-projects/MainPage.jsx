@@ -8,7 +8,7 @@ import { projects, sectors } from "../our-projects/projectData";
 import Footer from "../common/Footer";
 import Link from "next/link";
 
-export default function BIMProjectsPage() {
+export default function SRIIProjectsPage() {
   const [activeSector, setActiveSector] = useState("ALL");
 
   // Filter projects by sector

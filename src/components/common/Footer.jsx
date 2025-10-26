@@ -6,10 +6,10 @@ import { FaLinkedin, FaInstagram, FaYoutube, FaAngleRight, FaPhone, FaEnvelope, 
 
 export default function Footer() {
   const services = [
-    "BIM Services",
+    "SRII Services",
     "MEP Services",
-    "Structural BIM Services",
-    "Architectural BIM Services",
+    "Structural SRII Services",
+    "Architectural SRII Services",
     "VDC Services",
     "Architectural Engineering Services",
     "Facilities Operations & Management",
@@ -52,7 +52,7 @@ export default function Footer() {
             <p className="text-sm leading-relaxed mb-5">
               <span className="text-orange-400 font-semibold">Srii Constructions</span> – 8(a) Certified Women Owned Small Business
               (WOSB/MBE/DBE/WBE). Facilitating Architecture, Engineering, and
-              Construction Industry with BIM, VDC & 3D Laser Scanning Services across the USA.
+              Construction Industry with SRII, VDC & 3D Laser Scanning Services across the USA.
             </p>
 
             {/* Socials */}
@@ -178,7 +178,7 @@ export default function Footer() {
 //           <p className="text-sm">
 //             Tejjy Inc. – 8(a) Certified Women Owned Small Business
 //             (WOSB/MBE/DBE/WBE). Facilitating Architecture Engineering and
-//             Construction Industry with BIM VDC & 3D Laser Scanning Services in
+//             Construction Industry with SRII VDC & 3D Laser Scanning Services in
 //             USA
 //           </p>
 //         </div>
@@ -188,10 +188,10 @@ export default function Footer() {
 //           <h4 className="mb-6">OUR SERVICES</h4>
 //           <ul className="text-xs space-y-1">
 //             {[
-//               "BIM Services",
+//               "SRII Services",
 //               "MEP Services",
-//               "Structural BIM Services",
-//               "Architectural BIM Services",
+//               "Structural SRII Services",
+//               "Architectural SRII Services",
 //               "VDC Services",
 //               "Architectural Engineering Services",
 //               "Facilities Operations & Management",

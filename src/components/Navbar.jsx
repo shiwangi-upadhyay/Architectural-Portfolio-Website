@@ -78,8 +78,8 @@ const Navbar = () => {
                   px-4 py-2 rounded-lg font-semibold transition-all duration-200
                   ${
                     isActive
-                      ? "border border-orange-400 text-orange-400 bg-[#ffe1cc] backdrop-blur-md"
-                      : "border border-white/20 text-black bg-white/20 backdrop-blur-md hover:border-orange-400 hover:text-orange-400"
+                      ? "border border-orange-200 text-orange-400 bg-[#fae3d3] backdrop-blur-md"
+                      : "border border-white/20 text-black bg-white/20 backdrop-blur-md  hover:text-orange-400"
                   }
                 `}
               >
@@ -142,11 +142,11 @@ const Navbar = () => {
                   key={link.href}
                   href={link.href}
                   className={`
-                    px-4 py-3 rounded-lg font-semibold transition-all duration-200 text-center
+                    px-4 py-2 rounded-lg font-semibold transition-all duration-200 text-center
                     ${
                       isActive
-                        ? "border border-orange-400 text-orange-400 bg-[#ffe1cc]"
-                        : "border border-gray-200 text-gray-800 bg-white hover:border-orange-400 hover:text-orange-400 hover:bg-orange-50"
+                        ? " text-orange-400 "
+                        : " text-gray-800 bg-white  hover:text-orange-400 hover:bg-orange-50"
                     }
                   `}
                 >

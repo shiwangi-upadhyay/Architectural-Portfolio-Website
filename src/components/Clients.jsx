@@ -20,8 +20,8 @@ const clients = [
 
 export default function ClientsSection() {
   return (
-    <div className="py-16 w-full bg-white">
-      <h2 className="text-6xl font-light text-orange-400 text-center mb-4 tracking-wider">
+    <div className="py-12 w-full bg-white">
+      <h2 className="text-7xl font-light text-orange-400 text-center mb-4 tracking-wider">
         CLIENTS
       </h2>
       <div className="h-1 w-40 bg-orange-200 mx-auto mb-12" />
