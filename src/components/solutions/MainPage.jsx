@@ -34,8 +34,7 @@ export default function Services() {
       {/* Main Description - Responsive */}
       <div className="max-w-6xl mx-auto py-8 sm:py-10 md:py-12 px-4 sm:px-6">
         <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-          Srii Constructions. is a leading women-owned facility and property
-          management company in USA. We specialize in AEC services for Building
+          Srii Constructions. is a leading women-owned facilit. We specialize in AEC services for Building
           designs including Architecture, Engineering, and Construction (AEC)
           industry.
           {/* ... rest of content ... */}
@@ -48,8 +47,7 @@ export default function Services() {
       {/* Architectural Engineering Section - Responsive */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 mt-8 sm:mt-12 mb-10 sm:mb-14">
         <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-2 sm:mb-3 tracking-wide px-2">
-          ARCHITECTURAL ENGINEERING SOLUTION FOR RESIDENTIAL, COMMERCIAL AND
-          FEDERAL PROJECTS
+          ARCHITECTURAL ENGINEERING SOLUTION FOR RESIDENTIAL, COMMERCIAL PROJECTS
         </h2>
         <div className="flex justify-center mb-8 sm:mb-12 md:mb-16">
           <div className="w-10 h-[2px] bg-gradient-to-r from-orange-500 to-blue-500" />

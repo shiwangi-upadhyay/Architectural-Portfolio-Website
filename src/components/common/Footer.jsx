@@ -6,22 +6,18 @@ import { FaLinkedin, FaInstagram, FaYoutube, FaAngleRight, FaPhone, FaEnvelope, 
 
 export default function Footer() {
   const services = [
-    "SRII Services",
     "MEP Services",
-    "Structural SRII Services",
-    "Architectural SRII Services",
+    "Structural Services",
+    "Architectural Services",
     "VDC Services",
     "Architectural Engineering Services",
-    "Facilities Operations & Management",
-    "Permit Expeditor Services",
-    "CAD Drafting Services",
+    
   ];
 
   const quickLinks = [
     { name: "Locations", href: "/locations" },
     { name: "Projects", href: "/projects" },
     { name: "Blogs", href: "/blogs" },
-    { name: "Capability Statements", href: "/capability" },
     { name: "Career", href: "/career" },
   ];
 
@@ -39,7 +35,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* About */}
           <div>
-            <Link href="/" className="inline-block mb-4">
+            {/* <Link href="/" className="inline-block mb-4">
               <Image
                 src="/assets/logo.png"
                 alt="Tejjy Logo"
@@ -48,7 +44,7 @@ export default function Footer() {
                 className="rounded-md hover:opacity-90 transition-opacity"
                 priority
               />
-            </Link>
+            </Link> */}
             <p className="text-sm leading-relaxed mb-5">
               <span className="text-orange-400 font-semibold">Srii Constructions</span> – 8(a) Certified Women Owned Small Business
               (WOSB/MBE/DBE/WBE). Facilitating Architecture, Engineering, and
@@ -130,9 +126,19 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-white/10 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+        <div className="border-t border-white/10 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-0 text-sm text-gray-400">
           <p>
-            © {new Date().getFullYear()} <span className="text-orange-400">Srii Constructions</span>. All Rights Reserved.
+            © {new Date().getFullYear()} 
+            <Link href="/" className="inline-block">
+              <Image
+                src="/assets/logo.png"
+                alt="Tejjy Logo"
+                width={90}
+                height={5}
+                className="rounded-md hover:opacity-90 transition-opacity mt-3 md:mt-0"
+                priority
+              />
+            </Link> . All Rights Reserved.
           </p>
           <div className="flex gap-6 mt-3 md:mt-0">
             <Link href="/privacy" className="hover:text-orange-400 transition-colors">

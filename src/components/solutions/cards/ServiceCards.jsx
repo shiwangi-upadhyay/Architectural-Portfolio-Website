@@ -8,7 +8,7 @@ const services = [
   { title: "3D Laser Scanning", icon: "/icons/house.png" },
   { title: "BIM/VDC Services", icon: "/icons/healthcare.png" },
   { title: "CAD Drafting", icon: "/icons/institution.png" },
-  { title: "Permit Facilitation", icon: "/icons/factory.png" },
+  
 ];
 
 export default function ServiceCards() {
@@ -22,7 +22,7 @@ export default function ServiceCards() {
         <div className="w-10 h-[2px] bg-gradient-to-r from-orange-500 to-blue-500" />
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 justify-center gap-4 sm:gap-6 mb-6 sm:mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center gap-4 sm:gap-6 mb-6 sm:mb-8">
         {services.map((service) => (
           <div
             key={service.title}

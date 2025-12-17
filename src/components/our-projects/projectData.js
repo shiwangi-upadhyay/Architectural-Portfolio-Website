@@ -13,42 +13,42 @@ export const sectors = [
 export const projects = [
   {
     id: "railway",
-    title: "SRII Modeling & Clash Coordination For A Railway Project In USA",
+    title: "Modeling & Clash Coordination For A Railway Project",
     image: "/assets/img2.jpg",
     sector: "INDUSTRIAL",
     link: "/our-projects/railway", // Future page
   },
   {
     id: "waterplant",
-    title: "SRII Services For Water Treatment Plant In USA",
+    title: "Services For Water Treatment Plant",
     image: "/assets/img2.jpg",
     sector: "INDUSTRIAL",
     link: "/our-projects/waterplant",
   },
   {
     id: "warehouse",
-    title: "Architectural SRII For Warehouse Project In Cheshire, CT",
+    title: "Architectural For Warehouse Project",
     image: "/assets/img2.jpg",
     sector: "INDUSTRIAL",
     link: "/our-projects/warehouse",
   },
   {
     id: "residential",
-    title: "3D SRII Modeling for Residential Building in New York, USA",
+    title: "3D Modeling for Residential Building",
     image: "/assets/img2.jpg",
     sector: "RESIDENTIAL",
     link: "/our-projects/residential",
   },
   {
     id: "hospitality",
-    title: "SRII Services for Hospitality Project in Miami, USA",
+    title: "Services for Hospitality Project",
     image: "/assets/img2.jpg",
     sector: "HOSPITALITY",
     link: "/our-projects/hospitality",
   },
   {
     id: "commercial",
-    title: "SRII Coordination for Commercial Complex in Los Angeles, USA",
+    title: "Coordination for Commercial Complex",
     image: "/assets/img2.jpg",
     sector: "COMMERCIAL",
     link: "/our-projects/commercial",
