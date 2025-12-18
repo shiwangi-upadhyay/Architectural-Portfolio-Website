@@ -28,15 +28,15 @@ export default function TopInfoBar() {
       <div>
         Phone:{" "}
         <a href="tel:8603177105" className="hover:underline text-gray-200">
-          +91 0000000000
+          +91 9953135804
         </a>
-        , Email:{" "}
+        {/* , Email:{" "}
         <a
           href="mailto:info@united-bim.com"
           className="hover:underline text-gray-200"
         >
           info@shri.com
-        </a>
+        </a> */}
       </div>
       {/* Right: Social Icons */}
       <div className="flex gap-3 items-center">
