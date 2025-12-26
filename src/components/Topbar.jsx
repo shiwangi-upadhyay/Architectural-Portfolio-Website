@@ -28,7 +28,7 @@ export default function TopInfoBar() {
       <div>
         Phone:{" "}
         <a href="tel:8603177105" className="hover:underline text-gray-200">
-          +91 9953135804
+          +91 9266424557
         </a>
         {/* , Email:{" "}
         <a

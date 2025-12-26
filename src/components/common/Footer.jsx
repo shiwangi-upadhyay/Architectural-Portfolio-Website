@@ -23,7 +23,7 @@ export default function Footer() {
 
   const contactInfo = [
     // { icon: FaMapMarkerAlt, text: "1 Research Ct, Ste 335, Rockville MD 20850" },
-    { icon: FaPhone, text: "+91 9953135804" },
+    { icon: FaPhone, text: "+91 9266424557" },
     // { icon: FaMapMarkerAlt, text: "66 W Flagler Street, Suite 900 Miami, FL 33130" },
     // { icon: FaPhone, text: "(786) 789-2103 (FL)" },
     { icon: FaEnvelope, text: "" },
