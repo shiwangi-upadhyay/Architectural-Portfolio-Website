@@ -13,7 +13,7 @@ const Homepage = () => {
         <CarouselPlugin />
         <div className="max-w-5xl mx-auto p-6 space-y-8">
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, adipisci quibusdam ad suscipit quisquam eius ducimus rerum fugit aut...
+            The company is highly successful, with a strong track record of delivering quality solutions and earning the trust of clients across the industry. Its growth is driven by consistent performance, professional expertise, and a commitment to excellence that attracts both clients and talented professionals.
           </p>
         </div>
       </section>
