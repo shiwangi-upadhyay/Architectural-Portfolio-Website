@@ -26,7 +26,7 @@ export default function Footer() {
     { icon: FaPhone, text: "+91 9266424557" },
     // { icon: FaMapMarkerAlt, text: "66 W Flagler Street, Suite 900 Miami, FL 33130" },
     // { icon: FaPhone, text: "(786) 789-2103 (FL)" },
-    { icon: FaEnvelope, text: "" },
+    // { icon: FaEnvelope, text: "" },
   ];
 
   return (
@@ -46,9 +46,8 @@ export default function Footer() {
               />
             </Link> */}
             <p className="text-sm leading-relaxed mb-5">
-              <span className="text-orange-400 font-semibold">Srii Constructions</span> – 8(a) Certified Women Owned Small Business
-              (WOSB/MBE/DBE/WBE). Facilitating Architecture, Engineering, and
-              Construction Industry with SRII, VDC & 3D Laser Scanning Services across the USA.
+              <span className="text-orange-400 font-semibold">Srii Constructions</span> – 
+              Dedicated to precision in construction and structural design. Specializing in large-scale airport and highway infrastructure utilizing advanced AutoCAD and industry-leading design technologies. © 2026 SaiRamIT&INFRA. All rights reserved.
             </p>
 
             {/* Socials */}
