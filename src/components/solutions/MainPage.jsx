@@ -4,32 +4,20 @@ import SRIICards from "./cards/SRIICards";
 import SectorsWeServe from "../solutions/cards/SectorsWeServe";
 import ContactSection from "../common/ContactSection";
 import Footer from "../common/Footer";
-import { ChevronRight, Home } from "lucide-react";
-import Link from "next/link";
 import SlidingOverlay from "../common/SlidingOverlay";
+import PageHeader from "../common/PageHeader";
 
 export default function Services() {
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Hero Section - Responsive */}
-      <section className="bg-[#002651] text-white py-12 sm:py-16 md:py-20 text-center">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3">
+      <PageHeader
+        title={
+          <>
             Our <span className="text-orange-400">services</span>
-          </h1>
-
-          <div className="mt-4 sm:mt-6 flex items-center justify-center gap-2 text-xs sm:text-sm text-gray-400">
-            <Home size={14} className="text-orange-400" />
-            <Link href="/">
-              <span className="hover:text-orange-400 transition-colors cursor-pointer">
-                Home
-              </span>
-            </Link>
-            <ChevronRight size={12} />
-            <span className="text-orange-400">Our Services</span>
-          </div>
-        </div>
-      </section>
+          </>
+        }
+        currentPage="Our Services"
+      />
 
       {/* Main Description - Responsive */}
       <div className="max-w-6xl mx-auto py-8 sm:py-10 md:py-12 px-4 sm:px-6">
