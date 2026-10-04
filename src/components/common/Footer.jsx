@@ -26,7 +26,7 @@ export default function Footer() {
     { icon: FaPhone, text: "+91 9266424557" },
     // { icon: FaMapMarkerAlt, text: "66 W Flagler Street, Suite 900 Miami, FL 33130" },
     // { icon: FaPhone, text: "(786) 789-2103 (FL)" },
-    // { icon: FaEnvelope, text: "" },
+    { icon: FaEnvelope, text: "info@sairamitandinfra.com" },
   ];
 
   return (
